@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run":"node index.js",
+    "script":"node index.js",
+    "run": "node index.js",
     "test": "node test.js"
   },
   "repository": {
@@ -18,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/radin-111/intorduction-to-devops-pipeline/issues"
   },
-  "homepage": "https://github.com/radin-111/intorduction-to-devops-pipeline#readme"
+  "homepage": "https://github.com/radin-111/intorduction-to-devops-pipeline#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0"
+  }
 }
