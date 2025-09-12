@@ -1,0 +1,26 @@
+name: CI CD PipeLine
+
+on:
+  push:
+    branches: [ main ]
+
+
+jobs :
+  build:
+    runs-on: ubuntu-latest
+    
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v5
+
+      - name: Set up Node jobs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm bruh
+
+      - name: Run Test
+        run: npm test
