@@ -25,5 +25,4 @@ jobs :
       - name: Run Test
         run: npm test
 
-      - name: Run server
-        run: node index.js
+      
